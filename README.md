@@ -6,7 +6,7 @@
 
 ชื่อ-สกุล :ชวิศ จิระธิติกุล
 
-Vercel URL : 
+Vercel URL : lab07-2569-680610666.vercel.app
 
 ---
 
