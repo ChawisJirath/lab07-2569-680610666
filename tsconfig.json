@@ -4,6 +4,7 @@
     "@tsconfig/node-ts/tsconfig.json"
   ],
   "compilerOptions": {
+    "baseUrl": ".",
     "types": ["node"],
     "rootDir": ".",
     "outDir": "./dist",
