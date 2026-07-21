@@ -1,19 +1,15 @@
 {
-  "extends": [
-    "@tsconfig/node-lts/tsconfig.json",
-    "@tsconfig/node-ts/tsconfig.json"
-  ],
+  "extends": "@tsconfig/node-ts/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "types": ["node"],
-    "rootDir": ".",
+    "rootDir": "./src",
     "outDir": "./dist",
     "paths": {
-      "@src/*": ["./src/*"],
-      "@db/*": ["./src/db/*"],
-      "@libs/*": ["./src/libs/*"]
+      "@src/": ["./src/"],
+      "@db/": ["./src/db/"],
+      "@libs/": ["./src/libs/"]
     }
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/*/"],
   "exclude": ["node_modules"]
 }
