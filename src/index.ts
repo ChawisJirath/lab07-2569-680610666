@@ -175,7 +175,7 @@ app.delete("/api/students", (req: Request, res: Response) => {
     })
   }else{
     students.splice(foundIndex,1); 
-    return res.status(404).json({
+    return res.json({
       ok: true,
       message: `Student Id ${body.studentId} has been deleted`
     })
