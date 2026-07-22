@@ -26,7 +26,7 @@ app.get("/", (req: Request, res: Response) => {
 
 // GET /students
 // get students (by program)
-app.get("/students", (req: Request, res: Response) => {
+app.get("/api/students", (req: Request, res: Response) => {
   try {
     const program = req.query.program;
     const studentId = req.query.studentId;
@@ -158,7 +158,7 @@ app.put("/students", (req: Request, res: Response) => {
 });
 
 // DELETE /students, body = {studentId}
-app.delete("/students", (req: Request, res: Response) => {
+app.delete("/api/students", (req: Request, res: Response) => {
   const body = req.body as Student;
   const val = zStudentDeleteBody.safeParse(body);
   if(!val.success){
@@ -184,7 +184,7 @@ app.delete("/students", (req: Request, res: Response) => {
 });
 
 // GET /api/me
-app.get("/me",(req: Request,res: Response)=>{
+app.get("/api/me",(req: Request,res: Response)=>{
   return res.json({
           ok: true,
           fullName: "Chawis Jirathitikul",
